@@ -1,0 +1,118 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+.converter-container {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 480px;
+  text-align: center;
+  animation: fadeIn 1s ease-in-out;
+}
+h1 {
+  font-size: 30px;
+  color: #ff6f61;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+}
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+.form-group label {
+  font-size: 16px;
+  font-weight: bold;
+  color: #444;
+}
+.form-group input, .form-group select, .form-group textarea {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #eee;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+.form-group input:focus, .form-group select:focus, .form-group textarea:focus {
+  border-color: #ff6f61;
+  outline: none;
+}
+.form-group textarea {
+  height: 120px;
+  max-height: 300px;
+  resize: vertical;
+  overflow-y: auto;
+}
+.btn {
+  background-color: #ff6f61;
+  color: white;
+  padding: 15px;
+  font-size: 18px;
+  width: 100%;
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
+  transition: all 0.3s ease;
+}
+.btn:hover {
+  background-color: #ff4e3a;
+}
+.result {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  display: none;
+  font-size: 16px;
+  color: #444;
+}
+.download-link {
+  display: block;
+  margin-top: 20px;
+  padding: 12px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+.download-link:hover {
+  background-color: #0056b3;
+}
+footer {
+  margin-top: 30px;
+  font-size: 0.85rem;
+  color: #666;
+  text-align: center;
+}
+footer a {
+  color: #1f4037;
+  text-decoration: none;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>File Converter Tool</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="converter-container">
+    <h1>File Converter Tool</h1>
+    <div class="form-group">
+      <label for="fileName">File Name</label>
+      <input type="text" id="fileName" placeholder="Enter file name">
+    </div>
+    <div class="form-group">
+      <label for="fileContent">File Content</label>
+      <textarea id="fileContent" placeholder="Enter your content"></textarea>
+    </div>
+    <div class="form-group">
+      <label for="format">Select Format</label>
+      <select id="format">
+        <option value="txt">TEXT</option>
+        <option value="docx">DOCX</option>
+        <option value="html">HTML</option>
+        <option value="css">CSS</option>
+        <option value="js">JS</option>
+        <option value="py">PYTHON</option>
+        <option value="json">JSON</option>
+      </select>
+    </div>
+    <button class="btn" onclick="convertFile()">Convert File</button>
+
+    <div class="result" id="result">
+      <p><strong>Converted File Name:</strong> <span id="convertedFile"></span></p>
+      <a id="downloadLink" class="download-link" href="#" download>Download Converted File</a>
+    </div>
+  </div>
+
+  <footer>
+    Built by <a href="#">Codiify</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
