@@ -40,7 +40,7 @@ Follow these steps to use the tool:
 
 ## Credits
 
-This tool is developed by **Codiify**. For any queries or suggestions, feel free to contribute or raise an issue in the GitHub repository.
+This tool is developed by **abdullahcoded.blogspot.com**. For any queries or suggestions, feel free to contribute or raise an issue in the GitHub repository.
 
 ## License
 
